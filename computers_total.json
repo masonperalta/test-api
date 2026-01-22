@@ -1,0 +1,193 @@
+{
+  "results": {
+    "total": 3
+  },
+  "computers": [
+    {
+      "id": 123,
+      "udid": "A1B2C3D4-E5F6-7890-ABCD-1234567890AB",
+      "name": "MBP-Engineering-01",
+      "serial_number": "C02Z1234LVCF",
+      "platform": "Mac",
+      "last_contact_time": "2025-01-10T18:22:31Z",
+      "general": {
+        "asset_tag": "ENG-001",
+        "site": {
+          "id": 1,
+          "name": "HQ"
+        },
+        "managed": true,
+        "supervised": false
+      },
+      "hardware": {
+        "model_identifier": "MacBookPro18,3",
+        "model": "MacBook Pro (14-inch, 2021)",
+        "cpu_type": "Apple M1 Pro",
+        "processor_speed_mhz": 3220,
+        "total_ram_mb": 16384,
+        "battery_capacity": 91,
+        "storage": [
+          {
+            "disk": "APPLE SSD",
+            "drive_capacity_mb": 512000,
+            "partition_capacity_mb": 512000,
+            "partition_filevault2_state": "Encrypted"
+          }
+        ]
+      },
+      "operating_system": {
+        "name": "macOS",
+        "version": "14.2.1",
+        "build": "23C71",
+        "supplemental_build_version": null
+      },
+      "security": {
+        "sip_status": "Enabled",
+        "gatekeeper_status": "App Store and identified developers",
+        "xprotect_version": "1.0.0"
+      },
+      "applications": [
+        {
+          "name": "Google Chrome",
+          "version": "121.0.6167.85"
+        },
+        {
+          "name": "Microsoft Word",
+          "version": "16.82"
+        }
+      ],
+      "user_and_location": {
+        "username": "jdoe",
+        "realname": "Jane Doe",
+        "email": "jdoe@example.com",
+        "department": "Engineering",
+        "building": "Building A",
+        "room": "410"
+      }
+    },
+    {
+      "id": 124,
+      "udid": "B2C3D4E5-F678-9012-BCDE-2345678901BC",
+      "name": "MBA-Sales-07",
+      "serial_number": "C02Z5678QWER",
+      "platform": "Mac",
+      "last_contact_time": "2025-01-12T09:11:03Z",
+      "general": {
+        "asset_tag": "SAL-007",
+        "site": {
+          "id": 2,
+          "name": "West"
+        },
+        "managed": true,
+        "supervised": false
+      },
+      "hardware": {
+        "model_identifier": "MacBookAir10,1",
+        "model": "MacBook Air (M1, 2020)",
+        "cpu_type": "Apple M1",
+        "processor_speed_mhz": 3200,
+        "total_ram_mb": 8192,
+        "battery_capacity": 49,
+        "storage": [
+          {
+            "disk": "APPLE SSD",
+            "drive_capacity_mb": 256000,
+            "partition_capacity_mb": 256000,
+            "partition_filevault2_state": "Not Encrypted"
+          }
+        ]
+      },
+      "operating_system": {
+        "name": "macOS",
+        "version": "13.6.3",
+        "build": "22G436",
+        "supplemental_build_version": null
+      },
+      "security": {
+        "sip_status": "Enabled",
+        "gatekeeper_status": "App Store and identified developers",
+        "xprotect_version": "1.0.0"
+      },
+      "applications": [
+        {
+          "name": "Slack",
+          "version": "4.36.126"
+        },
+        {
+          "name": "Zoom",
+          "version": "5.17.6"
+        }
+      ],
+      "user_and_location": {
+        "username": "asmith",
+        "realname": "Alex Smith",
+        "email": "asmith@example.com",
+        "department": "Sales",
+        "building": "Building B",
+        "room": "210"
+      }
+    },
+    {
+      "id": 125,
+      "udid": "C3D4E5F6-7890-1234-CDEF-3456789012CD",
+      "name": "iMac-Design-03",
+      "serial_number": "C02Z9999UIOP",
+      "platform": "Mac",
+      "last_contact_time": "2025-01-14T14:55:20Z",
+      "general": {
+        "asset_tag": "DES-003",
+        "site": {
+          "id": 1,
+          "name": "HQ"
+        },
+        "managed": true,
+        "supervised": false
+      },
+      "hardware": {
+        "model_identifier": "iMac21,2",
+        "model": "iMac (24-inch, M1, 2021)",
+        "cpu_type": "Apple M1",
+        "processor_speed_mhz": 3200,
+        "total_ram_mb": 16384,
+        "battery_capacity": null,
+        "storage": [
+          {
+            "disk": "APPLE SSD",
+            "drive_capacity_mb": 1024000,
+            "partition_capacity_mb": 1024000,
+            "partition_filevault2_state": "Encrypted"
+          }
+        ]
+      },
+      "operating_system": {
+        "name": "macOS",
+        "version": "14.1",
+        "build": "23B74",
+        "supplemental_build_version": null
+      },
+      "security": {
+        "sip_status": "Enabled",
+        "gatekeeper_status": "App Store and identified developers",
+        "xprotect_version": "1.0.0"
+      },
+      "applications": [
+        {
+          "name": "Adobe Photoshop",
+          "version": "25.3.1"
+        },
+        {
+          "name": "Figma",
+          "version": "116.0"
+        }
+      ],
+      "user_and_location": {
+        "username": "mchen",
+        "realname": "Mei Chen",
+        "email": "mchen@example.com",
+        "department": "Design",
+        "building": "Building A",
+        "room": "305"
+      }
+    }
+  ]
+}
