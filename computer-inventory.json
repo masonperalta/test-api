@@ -2,31 +2,71 @@
   "totalCount": 5,
   "results": [
     {
-      "id": "101",
+      "id": "1",
       "udid": "A1B2C3D4-E5F6-7890-ABCD-1234567890AB",
       "general": {
         "name": "MBP-Engineering-01",
-        "assetTag": "ENG-001",
-        "lastContactTime": "2026-01-23T12:07:13.618489Z",
-        "lastEnrolledDate": "2025-03-10T15:20:00Z",
+        "lastIpAddress": "10.10.10.11",
         "jamfBinaryVersion": "11.23.0",
         "platform": "Mac",
+        "assetTag": "ENG-001",
+        "remoteManagement": {
+          "managed": true
+        },
         "supervised": false,
-        "remoteManagement": { "managed": true }
+        "mdmCapable": {
+          "capable": true,
+          "userManagementInfo": [
+            [
+              {
+                "capableUser": "jdoe",
+                "managementId": "123e4567-e89b-42d3-a456-426614174010"
+              }
+            ]
+          ]
+        },
+        "reportDate": "2026-01-23T12:05:02Z",
+        "lastContactTime": "2026-01-23T12:07:13.618489Z",
+        "lastEnrolledDate": "2025-03-10T15:20:00Z",
+        "site": {
+          "id": "1",
+          "name": "HQ"
+        },
+        "enrolledViaAutomatedDeviceEnrollment": true,
+        "userApprovedMdm": true,
+        "declarativeDeviceManagementEnabled": true,
+        "managementId": "73226fb6-61df-4c10-9552-eb9bc353d501",
+        "lastLoggedInUsernameBinary": "jdoe",
+        "lastLoggedInUsernameBinaryTimestamp": "2026-01-23T12:00:00Z"
       },
       "hardware": {
         "make": "Apple",
         "model": "MacBook Pro (14-inch, 2021)",
         "modelIdentifier": "MacBookPro18,3",
         "serialNumber": "C02Z1234LVCF",
+        "processorType": "Apple M1 Pro",
+        "processorArchitecture": "arm64",
+        "totalRamMegabytes": 16384,
+        "batteryCapacityPercent": 91,
+        "macAddress": "6A:2C:4B:B7:65:B5",
         "appleSilicon": true
       },
       "operatingSystem": {
         "name": "macOS",
         "version": "14.2.1",
         "build": "23C71",
-        "supplementalBuildVersion": null,
-        "rapidSecurityResponse": null
+        "fileVault2Status": "ALL_ENCRYPTED"
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": true,
+        "individualRecoveryKeyValidityStatus": "VALID"
+      },
+      "security": {
+        "sipStatus": "ENABLED",
+        "gatekeeperStatus": "APP_STORE_AND_IDENTIFIED_DEVELOPERS",
+        "firewallEnabled": true,
+        "activationLockEnabled": true,
+        "recoveryLockEnabled": false
       },
       "userAndLocation": {
         "username": "jdoe",
@@ -36,46 +76,107 @@
         "buildingId": "10",
         "room": "410"
       },
-      "security": {
-        "firewallEnabled": true,
-        "activationLockEnabled": false,
-        "recoveryLockEnabled": false
-      },
-      "diskEncryption": {
-        "fileVault2Enabled": true
-      },
+      "applications": [
+        {
+          "name": "Google Chrome",
+          "path": "/Applications/Google Chrome.app",
+          "version": "121.0.6167.85",
+          "bundleId": "com.google.Chrome",
+          "macAppStore": false,
+          "sizeMegabytes": 350,
+          "updateAvailable": false
+        },
+        {
+          "name": "Microsoft Word",
+          "path": "/Applications/Microsoft Word.app",
+          "version": "16.82",
+          "bundleId": "com.microsoft.Word",
+          "macAppStore": true,
+          "sizeMegabytes": 1200,
+          "updateAvailable": true
+        }
+      ],
       "groupMemberships": [
-        { "groupId": "10", "groupName": "Engineering Macs", "smartGroup": true },
-        { "groupId": "21", "groupName": "FileVault Enabled", "smartGroup": true },
-        { "groupId": "301", "groupName": "Pilot Ring - macOS 14", "smartGroup": false }
+        {
+          "groupId": "1",
+          "groupName": "Engineering Macs",
+          "groupDescription": "Engineering fleet computers.",
+          "smartGroup": true
+        },
+        {
+          "groupId": "105",
+          "groupName": "macOS 14 Devices",
+          "groupDescription": "All computers running macOS 14.x.",
+          "smartGroup": true
+        }
       ]
     },
     {
-      "id": "102",
+      "id": "2",
       "udid": "B2C3D4E5-F678-9012-BCDE-2345678901BC",
       "general": {
         "name": "MBA-Sales-07",
+        "lastIpAddress": "10.10.20.17",
+        "jamfBinaryVersion": "11.22.0",
+        "platform": "Mac",
         "assetTag": "SAL-007",
+        "remoteManagement": {
+          "managed": true
+        },
+        "supervised": false,
+        "mdmCapable": {
+          "capable": true,
+          "userManagementInfo": [
+            [
+              {
+                "capableUser": "asmith",
+                "managementId": "123e4567-e89b-42d3-a456-426614174020"
+              }
+            ]
+          ]
+        },
+        "reportDate": "2026-01-20T09:10:12Z",
         "lastContactTime": "2026-01-20T09:11:03Z",
         "lastEnrolledDate": "2024-11-02T13:00:00Z",
-        "jamfBinaryVersion": "11.21.1",
-        "platform": "Mac",
-        "supervised": false,
-        "remoteManagement": { "managed": true }
+        "site": {
+          "id": "2",
+          "name": "West"
+        },
+        "enrolledViaAutomatedDeviceEnrollment": false,
+        "userApprovedMdm": true,
+        "declarativeDeviceManagementEnabled": true,
+        "managementId": "73226fb6-61df-4c10-9552-eb9bc353d502",
+        "lastLoggedInUsernameBinary": "asmith",
+        "lastLoggedInUsernameBinaryTimestamp": "2026-01-20T09:05:00Z"
       },
       "hardware": {
         "make": "Apple",
         "model": "MacBook Air (M1, 2020)",
         "modelIdentifier": "MacBookAir10,1",
         "serialNumber": "C02Z5678QWER",
+        "processorType": "Apple M1",
+        "processorArchitecture": "arm64",
+        "totalRamMegabytes": 8192,
+        "batteryCapacityPercent": 49,
+        "macAddress": "AA:BB:CC:DD:EE:01",
         "appleSilicon": true
       },
       "operatingSystem": {
         "name": "macOS",
         "version": "13.6.3",
         "build": "22G436",
-        "supplementalBuildVersion": null,
-        "rapidSecurityResponse": null
+        "fileVault2Status": "NOT_ENCRYPTED"
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": false,
+        "individualRecoveryKeyValidityStatus": "UNKNOWN"
+      },
+      "security": {
+        "sipStatus": "ENABLED",
+        "gatekeeperStatus": "APP_STORE_AND_IDENTIFIED_DEVELOPERS",
+        "firewallEnabled": true,
+        "activationLockEnabled": false,
+        "recoveryLockEnabled": false
       },
       "userAndLocation": {
         "username": "asmith",
@@ -85,46 +186,106 @@
         "buildingId": "20",
         "room": "210"
       },
-      "security": {
-        "firewallEnabled": true,
-        "activationLockEnabled": false,
-        "recoveryLockEnabled": false
-      },
-      "diskEncryption": {
-        "fileVault2Enabled": false
-      },
+      "applications": [
+        {
+          "name": "Slack",
+          "path": "/Applications/Slack.app",
+          "version": "4.36.126",
+          "bundleId": "com.tinyspeck.slackmacgap",
+          "macAppStore": false,
+          "sizeMegabytes": 300,
+          "updateAvailable": false
+        },
+        {
+          "name": "Zoom",
+          "path": "/Applications/zoom.us.app",
+          "version": "5.17.6",
+          "bundleId": "us.zoom.xos",
+          "macAppStore": false,
+          "sizeMegabytes": 220,
+          "updateAvailable": true
+        }
+      ],
       "groupMemberships": [
-        { "groupId": "12", "groupName": "Sales Macs", "smartGroup": false },
-        { "groupId": "88", "groupName": "macOS 13 Devices", "smartGroup": true },
-        { "groupId": "312", "groupName": "FileVault Disabled", "smartGroup": true }
+        {
+          "groupId": "2",
+          "groupName": "Sales Macs",
+          "groupDescription": "Sales fleet computers.",
+          "smartGroup": false
+        },
+        {
+          "groupId": "312",
+          "groupName": "FileVault Disabled",
+          "groupDescription": "Computers where FileVault is not enabled.",
+          "smartGroup": true
+        }
       ]
     },
     {
-      "id": "103",
+      "id": "3",
       "udid": "C3D4E5F6-7890-1234-CDEF-3456789012CD",
       "general": {
         "name": "iMac-Design-03",
-        "assetTag": "DES-003",
-        "lastContactTime": "2026-01-22T14:55:20Z",
-        "lastEnrolledDate": "2025-06-18T10:05:00Z",
+        "lastIpAddress": "10.10.30.25",
         "jamfBinaryVersion": "11.23.0",
         "platform": "Mac",
+        "assetTag": "DES-003",
+        "remoteManagement": {
+          "managed": true
+        },
         "supervised": false,
-        "remoteManagement": { "managed": true }
+        "mdmCapable": {
+          "capable": true,
+          "userManagementInfo": [
+            [
+              {
+                "capableUser": "mchen",
+                "managementId": "123e4567-e89b-42d3-a456-426614174030"
+              }
+            ]
+          ]
+        },
+        "reportDate": "2026-01-22T14:54:10Z",
+        "lastContactTime": "2026-01-22T14:55:20Z",
+        "lastEnrolledDate": "2025-06-18T10:05:00Z",
+        "site": {
+          "id": "1",
+          "name": "HQ"
+        },
+        "enrolledViaAutomatedDeviceEnrollment": true,
+        "userApprovedMdm": true,
+        "declarativeDeviceManagementEnabled": true,
+        "managementId": "73226fb6-61df-4c10-9552-eb9bc353d503",
+        "lastLoggedInUsernameBinary": "mchen",
+        "lastLoggedInUsernameBinaryTimestamp": "2026-01-22T14:45:00Z"
       },
       "hardware": {
         "make": "Apple",
         "model": "iMac (24-inch, M1, 2021)",
         "modelIdentifier": "iMac21,2",
         "serialNumber": "C02Z9999UIOP",
+        "processorType": "Apple M1",
+        "processorArchitecture": "arm64",
+        "totalRamMegabytes": 16384,
+        "macAddress": "AA:BB:CC:DD:EE:11",
         "appleSilicon": true
       },
       "operatingSystem": {
         "name": "macOS",
         "version": "14.1",
         "build": "23B74",
-        "supplementalBuildVersion": null,
-        "rapidSecurityResponse": null
+        "fileVault2Status": "ALL_ENCRYPTED"
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": true,
+        "individualRecoveryKeyValidityStatus": "VALID"
+      },
+      "security": {
+        "sipStatus": "ENABLED",
+        "gatekeeperStatus": "APP_STORE_AND_IDENTIFIED_DEVELOPERS",
+        "firewallEnabled": true,
+        "activationLockEnabled": false,
+        "recoveryLockEnabled": false
       },
       "userAndLocation": {
         "username": "mchen",
@@ -134,45 +295,107 @@
         "buildingId": "10",
         "room": "305"
       },
-      "security": {
-        "firewallEnabled": true,
-        "activationLockEnabled": false,
-        "recoveryLockEnabled": false
-      },
-      "diskEncryption": {
-        "fileVault2Enabled": true
-      },
+      "applications": [
+        {
+          "name": "Adobe Photoshop",
+          "path": "/Applications/Adobe Photoshop.app",
+          "version": "25.3.1",
+          "bundleId": "com.adobe.Photoshop",
+          "macAppStore": false,
+          "sizeMegabytes": 3000,
+          "updateAvailable": false
+        },
+        {
+          "name": "Figma",
+          "path": "/Applications/Figma.app",
+          "version": "116.0",
+          "bundleId": "com.figma.Desktop",
+          "macAppStore": false,
+          "sizeMegabytes": 400,
+          "updateAvailable": true
+        }
+      ],
       "groupMemberships": [
-        { "groupId": "15", "groupName": "Design Macs", "smartGroup": false },
-        { "groupId": "105", "groupName": "macOS 14 Devices", "smartGroup": true }
+        {
+          "groupId": "3",
+          "groupName": "Design Macs",
+          "groupDescription": "Design fleet computers.",
+          "smartGroup": false
+        },
+        {
+          "groupId": "105",
+          "groupName": "macOS 14 Devices",
+          "groupDescription": "All computers running macOS 14.x.",
+          "smartGroup": true
+        }
       ]
     },
     {
-      "id": "104",
+      "id": "4",
       "udid": "D4E5F678-9012-3456-DEFA-4567890123DE",
       "general": {
         "name": "MBP-Security-02",
-        "assetTag": "SEC-002",
-        "lastContactTime": "2026-01-21T08:30:00Z",
-        "lastEnrolledDate": "2025-01-05T12:00:00Z",
+        "lastIpAddress": "10.10.40.44",
         "jamfBinaryVersion": "11.22.0",
         "platform": "Mac",
+        "assetTag": "SEC-002",
+        "remoteManagement": {
+          "managed": true
+        },
         "supervised": true,
-        "remoteManagement": { "managed": true }
+        "mdmCapable": {
+          "capable": true,
+          "userManagementInfo": [
+            [
+              {
+                "capableUser": "rpatel",
+                "managementId": "123e4567-e89b-42d3-a456-426614174040"
+              }
+            ]
+          ]
+        },
+        "reportDate": "2026-01-21T08:25:00Z",
+        "lastContactTime": "2026-01-21T08:30:00Z",
+        "lastEnrolledDate": "2025-01-05T12:00:00Z",
+        "site": {
+          "id": "1",
+          "name": "HQ"
+        },
+        "enrolledViaAutomatedDeviceEnrollment": true,
+        "userApprovedMdm": true,
+        "declarativeDeviceManagementEnabled": true,
+        "managementId": "73226fb6-61df-4c10-9552-eb9bc353d504",
+        "lastLoggedInUsernameBinary": "rpatel",
+        "lastLoggedInUsernameBinaryTimestamp": "2026-01-21T08:05:00Z"
       },
       "hardware": {
         "make": "Apple",
         "model": "MacBook Pro (16-inch, 2023)",
         "modelIdentifier": "MacBookPro20,2",
         "serialNumber": "C02Z1111ASDF",
+        "processorType": "Apple M2 Max",
+        "processorArchitecture": "arm64",
+        "totalRamMegabytes": 32768,
+        "batteryCapacityPercent": 88,
+        "macAddress": "AA:BB:CC:DD:EE:21",
         "appleSilicon": true
       },
       "operatingSystem": {
         "name": "macOS",
         "version": "14.0",
         "build": "23A344",
-        "supplementalBuildVersion": null,
-        "rapidSecurityResponse": null
+        "fileVault2Status": "ALL_ENCRYPTED"
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": true,
+        "individualRecoveryKeyValidityStatus": "VALID"
+      },
+      "security": {
+        "sipStatus": "ENABLED",
+        "gatekeeperStatus": "APP_STORE_AND_IDENTIFIED_DEVELOPERS",
+        "firewallEnabled": true,
+        "activationLockEnabled": true,
+        "recoveryLockEnabled": true
       },
       "userAndLocation": {
         "username": "rpatel",
@@ -182,46 +405,97 @@
         "buildingId": "30",
         "room": "120"
       },
-      "security": {
-        "firewallEnabled": true,
-        "activationLockEnabled": true,
-        "recoveryLockEnabled": true
-      },
-      "diskEncryption": {
-        "fileVault2Enabled": true
-      },
+      "applications": [
+        {
+          "name": "Jamf Protect",
+          "path": "/Applications/Jamf Protect.app",
+          "version": "5.2.0",
+          "bundleId": "com.jamf.protect",
+          "macAppStore": false,
+          "sizeMegabytes": 180,
+          "updateAvailable": false
+        }
+      ],
       "groupMemberships": [
-        { "groupId": "30", "groupName": "Security Team Macs", "smartGroup": false },
-        { "groupId": "400", "groupName": "High-RAM Devices", "smartGroup": true },
-        { "groupId": "401", "groupName": "Supervised Macs", "smartGroup": true }
+        {
+          "groupId": "4",
+          "groupName": "Security Team Macs",
+          "groupDescription": "Security fleet computers.",
+          "smartGroup": true
+        },
+        {
+          "groupId": "401",
+          "groupName": "Supervised Macs",
+          "groupDescription": "Computers marked as supervised.",
+          "smartGroup": true
+        }
       ]
     },
     {
-      "id": "105",
+      "id": "5",
       "udid": "E5F67890-1234-5678-EFAB-5678901234EF",
       "general": {
         "name": "MacMini-IT-05",
-        "assetTag": "IT-005",
-        "lastContactTime": "2026-01-19T10:45:30Z",
-        "lastEnrolledDate": "2023-09-14T09:00:00Z",
+        "lastIpAddress": "10.10.50.9",
         "jamfBinaryVersion": "11.18.0",
         "platform": "Mac",
+        "assetTag": "IT-005",
+        "remoteManagement": {
+          "managed": false
+        },
         "supervised": false,
-        "remoteManagement": { "managed": false }
+        "mdmCapable": {
+          "capable": true,
+          "userManagementInfo": [
+            [
+              {
+                "capableUser": "itops",
+                "managementId": "123e4567-e89b-42d3-a456-426614174050"
+              }
+            ]
+          ]
+        },
+        "reportDate": "2026-01-19T10:40:00Z",
+        "lastContactTime": "2026-01-19T10:45:30Z",
+        "lastEnrolledDate": "2023-09-14T09:00:00Z",
+        "site": {
+          "id": "1",
+          "name": "HQ"
+        },
+        "enrolledViaAutomatedDeviceEnrollment": false,
+        "userApprovedMdm": true,
+        "declarativeDeviceManagementEnabled": false,
+        "managementId": "73226fb6-61df-4c10-9552-eb9bc353d505",
+        "lastLoggedInUsernameBinary": "itops",
+        "lastLoggedInUsernameBinaryTimestamp": "2026-01-19T10:05:00Z"
       },
       "hardware": {
         "make": "Apple",
         "model": "Mac mini (M1, 2020)",
         "modelIdentifier": "Macmini9,1",
         "serialNumber": "C02Z7777ABCD",
+        "processorType": "Apple M1",
+        "processorArchitecture": "arm64",
+        "totalRamMegabytes": 8192,
+        "macAddress": "AA:BB:CC:DD:EE:31",
         "appleSilicon": true
       },
       "operatingSystem": {
         "name": "macOS",
         "version": "13.5",
         "build": "22G74",
-        "supplementalBuildVersion": null,
-        "rapidSecurityResponse": null
+        "fileVault2Status": "NOT_ENCRYPTED"
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": false,
+        "individualRecoveryKeyValidityStatus": "UNKNOWN"
+      },
+      "security": {
+        "sipStatus": "ENABLED",
+        "gatekeeperStatus": "APP_STORE_AND_IDENTIFIED_DEVELOPERS",
+        "firewallEnabled": false,
+        "activationLockEnabled": false,
+        "recoveryLockEnabled": false
       },
       "userAndLocation": {
         "username": "itops",
@@ -231,17 +505,30 @@
         "buildingId": "40",
         "room": "Lab-2"
       },
-      "security": {
-        "firewallEnabled": false,
-        "activationLockEnabled": false,
-        "recoveryLockEnabled": false
-      },
-      "diskEncryption": {
-        "fileVault2Enabled": false
-      },
+      "applications": [
+        {
+          "name": "VS Code",
+          "path": "/Applications/Visual Studio Code.app",
+          "version": "1.72.0",
+          "bundleId": "com.microsoft.VSCode",
+          "macAppStore": false,
+          "sizeMegabytes": 450,
+          "updateAvailable": false
+        }
+      ],
       "groupMemberships": [
-        { "groupId": "5", "groupName": "IT Test Devices", "smartGroup": false },
-        { "groupId": "500", "groupName": "Unmanaged Macs", "smartGroup": true }
+        {
+          "groupId": "5",
+          "groupName": "IT Test Devices",
+          "groupDescription": "IT lab / test computers.",
+          "smartGroup": false
+        },
+        {
+          "groupId": "500",
+          "groupName": "Unmanaged Macs",
+          "groupDescription": "Computers not marked as remotely managed.",
+          "smartGroup": true
+        }
       ]
     }
   ]
