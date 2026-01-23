@@ -1,0 +1,248 @@
+{
+  "totalCount": 5,
+  "results": [
+    {
+      "id": "101",
+      "udid": "A1B2C3D4-E5F6-7890-ABCD-1234567890AB",
+      "general": {
+        "name": "MBP-Engineering-01",
+        "assetTag": "ENG-001",
+        "lastContactTime": "2026-01-23T12:07:13.618489Z",
+        "lastEnrolledDate": "2025-03-10T15:20:00Z",
+        "jamfBinaryVersion": "11.23.0",
+        "platform": "Mac",
+        "supervised": false,
+        "remoteManagement": { "managed": true }
+      },
+      "hardware": {
+        "make": "Apple",
+        "model": "MacBook Pro (14-inch, 2021)",
+        "modelIdentifier": "MacBookPro18,3",
+        "serialNumber": "C02Z1234LVCF",
+        "appleSilicon": true
+      },
+      "operatingSystem": {
+        "name": "macOS",
+        "version": "14.2.1",
+        "build": "23C71",
+        "supplementalBuildVersion": null,
+        "rapidSecurityResponse": null
+      },
+      "userAndLocation": {
+        "username": "jdoe",
+        "realname": "Jane Doe",
+        "email": "jdoe@example.com",
+        "departmentId": "2001",
+        "buildingId": "10",
+        "room": "410"
+      },
+      "security": {
+        "firewallEnabled": true,
+        "activationLockEnabled": false,
+        "recoveryLockEnabled": false
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": true
+      },
+      "groupMemberships": [
+        { "groupId": "10", "groupName": "Engineering Macs", "smartGroup": true },
+        { "groupId": "21", "groupName": "FileVault Enabled", "smartGroup": true },
+        { "groupId": "301", "groupName": "Pilot Ring - macOS 14", "smartGroup": false }
+      ]
+    },
+    {
+      "id": "102",
+      "udid": "B2C3D4E5-F678-9012-BCDE-2345678901BC",
+      "general": {
+        "name": "MBA-Sales-07",
+        "assetTag": "SAL-007",
+        "lastContactTime": "2026-01-20T09:11:03Z",
+        "lastEnrolledDate": "2024-11-02T13:00:00Z",
+        "jamfBinaryVersion": "11.21.1",
+        "platform": "Mac",
+        "supervised": false,
+        "remoteManagement": { "managed": true }
+      },
+      "hardware": {
+        "make": "Apple",
+        "model": "MacBook Air (M1, 2020)",
+        "modelIdentifier": "MacBookAir10,1",
+        "serialNumber": "C02Z5678QWER",
+        "appleSilicon": true
+      },
+      "operatingSystem": {
+        "name": "macOS",
+        "version": "13.6.3",
+        "build": "22G436",
+        "supplementalBuildVersion": null,
+        "rapidSecurityResponse": null
+      },
+      "userAndLocation": {
+        "username": "asmith",
+        "realname": "Alex Smith",
+        "email": "asmith@example.com",
+        "departmentId": "2002",
+        "buildingId": "20",
+        "room": "210"
+      },
+      "security": {
+        "firewallEnabled": true,
+        "activationLockEnabled": false,
+        "recoveryLockEnabled": false
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": false
+      },
+      "groupMemberships": [
+        { "groupId": "12", "groupName": "Sales Macs", "smartGroup": false },
+        { "groupId": "88", "groupName": "macOS 13 Devices", "smartGroup": true },
+        { "groupId": "312", "groupName": "FileVault Disabled", "smartGroup": true }
+      ]
+    },
+    {
+      "id": "103",
+      "udid": "C3D4E5F6-7890-1234-CDEF-3456789012CD",
+      "general": {
+        "name": "iMac-Design-03",
+        "assetTag": "DES-003",
+        "lastContactTime": "2026-01-22T14:55:20Z",
+        "lastEnrolledDate": "2025-06-18T10:05:00Z",
+        "jamfBinaryVersion": "11.23.0",
+        "platform": "Mac",
+        "supervised": false,
+        "remoteManagement": { "managed": true }
+      },
+      "hardware": {
+        "make": "Apple",
+        "model": "iMac (24-inch, M1, 2021)",
+        "modelIdentifier": "iMac21,2",
+        "serialNumber": "C02Z9999UIOP",
+        "appleSilicon": true
+      },
+      "operatingSystem": {
+        "name": "macOS",
+        "version": "14.1",
+        "build": "23B74",
+        "supplementalBuildVersion": null,
+        "rapidSecurityResponse": null
+      },
+      "userAndLocation": {
+        "username": "mchen",
+        "realname": "Mei Chen",
+        "email": "mchen@example.com",
+        "departmentId": "2003",
+        "buildingId": "10",
+        "room": "305"
+      },
+      "security": {
+        "firewallEnabled": true,
+        "activationLockEnabled": false,
+        "recoveryLockEnabled": false
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": true
+      },
+      "groupMemberships": [
+        { "groupId": "15", "groupName": "Design Macs", "smartGroup": false },
+        { "groupId": "105", "groupName": "macOS 14 Devices", "smartGroup": true }
+      ]
+    },
+    {
+      "id": "104",
+      "udid": "D4E5F678-9012-3456-DEFA-4567890123DE",
+      "general": {
+        "name": "MBP-Security-02",
+        "assetTag": "SEC-002",
+        "lastContactTime": "2026-01-21T08:30:00Z",
+        "lastEnrolledDate": "2025-01-05T12:00:00Z",
+        "jamfBinaryVersion": "11.22.0",
+        "platform": "Mac",
+        "supervised": true,
+        "remoteManagement": { "managed": true }
+      },
+      "hardware": {
+        "make": "Apple",
+        "model": "MacBook Pro (16-inch, 2023)",
+        "modelIdentifier": "MacBookPro20,2",
+        "serialNumber": "C02Z1111ASDF",
+        "appleSilicon": true
+      },
+      "operatingSystem": {
+        "name": "macOS",
+        "version": "14.0",
+        "build": "23A344",
+        "supplementalBuildVersion": null,
+        "rapidSecurityResponse": null
+      },
+      "userAndLocation": {
+        "username": "rpatel",
+        "realname": "Ravi Patel",
+        "email": "rpatel@example.com",
+        "departmentId": "2004",
+        "buildingId": "30",
+        "room": "120"
+      },
+      "security": {
+        "firewallEnabled": true,
+        "activationLockEnabled": true,
+        "recoveryLockEnabled": true
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": true
+      },
+      "groupMemberships": [
+        { "groupId": "30", "groupName": "Security Team Macs", "smartGroup": false },
+        { "groupId": "400", "groupName": "High-RAM Devices", "smartGroup": true },
+        { "groupId": "401", "groupName": "Supervised Macs", "smartGroup": true }
+      ]
+    },
+    {
+      "id": "105",
+      "udid": "E5F67890-1234-5678-EFAB-5678901234EF",
+      "general": {
+        "name": "MacMini-IT-05",
+        "assetTag": "IT-005",
+        "lastContactTime": "2026-01-19T10:45:30Z",
+        "lastEnrolledDate": "2023-09-14T09:00:00Z",
+        "jamfBinaryVersion": "11.18.0",
+        "platform": "Mac",
+        "supervised": false,
+        "remoteManagement": { "managed": false }
+      },
+      "hardware": {
+        "make": "Apple",
+        "model": "Mac mini (M1, 2020)",
+        "modelIdentifier": "Macmini9,1",
+        "serialNumber": "C02Z7777ABCD",
+        "appleSilicon": true
+      },
+      "operatingSystem": {
+        "name": "macOS",
+        "version": "13.5",
+        "build": "22G74",
+        "supplementalBuildVersion": null,
+        "rapidSecurityResponse": null
+      },
+      "userAndLocation": {
+        "username": "itops",
+        "realname": "IT Ops",
+        "email": "itops@example.com",
+        "departmentId": "2005",
+        "buildingId": "40",
+        "room": "Lab-2"
+      },
+      "security": {
+        "firewallEnabled": false,
+        "activationLockEnabled": false,
+        "recoveryLockEnabled": false
+      },
+      "diskEncryption": {
+        "fileVault2Enabled": false
+      },
+      "groupMemberships": [
+        { "groupId": "5", "groupName": "IT Test Devices", "smartGroup": false },
+        { "groupId": "500", "groupName": "Unmanaged Macs", "smartGroup": true }
+      ]
+    }
+  ]
+}
